@@ -246,7 +246,6 @@ model StatelessRuleGroupReference {
 @doc("Definition of IPSet")
 model IPSet {
   @doc("Property definition")
-  @identifiers(#[])
   definition?: string[];
 }
 

@@ -298,7 +298,6 @@ model InventoryConfiguration {
   includedObjectVersions?: InventoryConfigurationIncludedObjectVersions;
 
   @doc("Contains the optional fields that are included in the inventory results.")
-  @identifiers(#[])
   optionalFields?: InventoryConfigurationOptionalFields[];
 
   @doc("Specifies the inventory filter prefix.")
@@ -603,19 +602,15 @@ model ServerSideEncryptionRule {
 @doc("Definition of CorsRule")
 model CorsRule {
   @doc("Headers that are specified in the ``Access-Control-Request-Headers`` header. These headers are allowed in a preflight OPTIONS request. In response to any preflight OPTIONS request, Amazon S3 returns any requested headers that are allowed.")
-  @identifiers(#[])
   allowedHeaders?: string[];
 
   @doc("An HTTP method that you allow the origin to run.  *Allowed values*: ``GET`` | ``PUT`` | ``HEAD`` | ``POST`` | ``DELETE``")
-  @identifiers(#[])
   allowedMethods?: CorsRuleAllowedMethods[];
 
   @doc("One or more origins you want customers to be able to access the bucket from.")
-  @identifiers(#[])
   allowedOrigins?: string[];
 
   @doc("One or more headers in the response that you want customers to be able to access from their applications (for example, from a JavaScript ``XMLHttpRequest`` object).")
-  @identifiers(#[])
   exposedHeaders?: string[];
 
   @doc("A unique identifier for this rule. The value must be no more than 255 characters.")

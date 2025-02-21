@@ -105,7 +105,6 @@ model AwsElasticLoadBalancingV2TargetGroupProperties {
   ipAddressType?: string;
 
   @doc("The Amazon Resource Names (ARNs) of the load balancers that route traffic to this target group.")
-  @identifiers(#[])
   loadBalancerArns?: string[];
 
   @doc("[HTTP/HTTPS health checks] The HTTP or gRPC codes to use when checking for a successful response from a target.")

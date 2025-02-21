@@ -427,7 +427,6 @@ model VMAttributes {
     """)
   localStorageInGiB?: VMAttributeMinMaxDouble;
 
-  @identifiers(#[])
   @doc("""
     The local storage disk types specified as a list. LocalStorageSupport should be set to "Included" or "Required" to use this VMAttribute. 
     If localStorageSupport is "Excluded", this VMAttribute can not be used.
@@ -460,7 +459,6 @@ model VMAttributes {
     """)
   acceleratorSupport?: VMAttributeSupport;
 
-  @identifiers(#[])
   @doc("""
     The accelerator manufacturers specified as a list. 
     acceleratorSupport should be set to "Included" or "Required" to use this VMAttribute. 
@@ -468,7 +466,6 @@ model VMAttributes {
     """)
   acceleratorManufacturers?: Array<AcceleratorManufacturer>;
 
-  @identifiers(#[])
   @doc("""
     The accelerator types specified as a list. acceleratorSupport should be set to "Included" or "Required" to use this VMAttribute. 
     If acceleratorSupport is "Excluded", this VMAttribute can not be used.
@@ -482,22 +479,18 @@ model VMAttributes {
     """)
   acceleratorCount?: VMAttributeMinMaxInteger;
 
-  @identifiers(#[])
   @doc("The VM category specified as a list. Optional parameter.")
   vmCategories?: Array<VMCategory>;
 
-  @identifiers(#[])
   @doc("The VM architecture types specified as a list. Optional parameter.")
   architectureTypes?: Array<ArchitectureType>;
 
-  @identifiers(#[])
   @doc("The VM CPU manufacturers specified as a list. Optional parameter.")
   cpuManufacturers?: Array<CpuManufacturer>;
 
   @doc("Specifies whether the VMSize supporting burstable capability should be used to build Fleet or not.")
   burstableSupport?: VMAttributeSupport;
 
-  @identifiers(#[])
   @doc("Specifies which VMSizes should be excluded while building Fleet. Optional parameter.")
   excludedVMSizes?: Array<string>;
 }

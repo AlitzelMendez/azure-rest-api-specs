@@ -158,7 +158,6 @@ model Service {
   pipelines: Pipeline[];
 
   @doc("Persistence options to all pipelines in the instance.")
-  @identifiers(#[])
   persistence?: PersistenceConfigurations;
 }
 

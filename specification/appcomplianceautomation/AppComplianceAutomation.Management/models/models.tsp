@@ -544,7 +544,7 @@ model GetOverviewStatusResponse {
   /**
    * List of different status items.
    */
-  @idenfiers(#["statusName"])
+  @identifiers(#["statusName"])
   statusList?: StatusItem[];
 }
 
